@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-app {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background-color 0.3s ease; /* Dodata tranzicija za glatku promenu */
+}
+
+.search {
+  margin-bottom: 20px;
+}
+
+.search-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  padding: 10px 15px;
+  margin-top: 12px;
+  border: 1px solid #d1d5db;
+  transition: background-color 0.3s ease; /* Glatka promena boje pozadine */
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background: none;
+  flex: 1;
+  padding: 15px;
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+.search-bar i {
+  color: #4b5563;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.weather img {
+  width: 300px; /* Povećana veličina slike */
+  margin-bottom: 10px;
+}
+
+.weather-type {
+  font-size: 1.7rem; /* Povećan font za tip vremena */
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.temp {
+  font-size: 3rem; /* Povećana veličina za temperaturu */
+  color: #ff9800;
+  margin-bottom: 20px;
+}
+
+.weather-date p {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.weather-data {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #555;
+}
+
+.weather-data .humidity, .weather-data .wind {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.data-name {
+  font-size: 1rem;
+}
+
+.data {
+  font-weight: 600;
+}
+
+.humidity i, .wind i {
+  font-size: 1.5rem;
+  color: #4b5563;
+}
